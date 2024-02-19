@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o contêiner PaiDetalhes */
+.PaiDetalhes {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+    background: #e4e4e4c5;
+}
+
+.PaiDetalhes div img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 7px;
+}
+
+@media screen and (min-width: 768px) {
+    .PaiDetalhes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 40px;
+    }
+}
+
+.listaColunas ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    column-count: 1;
+    column-gap: 20px;
+}
+
+.listaColunas li {
+    margin-bottom: 10px;
+    /* background: #e4e4e4f3; */
+    padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .listaColunas ul {
+        column-count: 2;
+    }
+}
